@@ -1,0 +1,286 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header, footer{
+    padding: 10px;
+    display: flex;
+    background-color: #A3A184;
+    justify-content: center; 
+    flex-direction: column;   
+    align-items: center;
+    width: 100%;
+}
+
+h1{
+    color: white;
+    text-align: justify;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+header h1{
+    cursor: pointer;
+}
+
+footer{
+    height: auto;
+    bottom: 0;
+}
+
+footer p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus, .inputEditar textarea{
+    outline: none;
+}
+
+#botoes{
+    border-top: 1px solid #686230;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+#apresentacao{
+    border: 1px solid rgb(200, 200, 200);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px 100px 0px 100px;
+    width: 700px;
+}
+
+#infoApresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#infoApresentacao img{
+    width: 300px;
+    margin: 10px;
+}
+
+#editar{
+    border: solid 1px gray;
+    height: auto;
+    width: 500px;
+    margin-top: 30px;
+    padding: 10px;
+
+}
+
+#editar-resumo, #editar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: transparent;
+}
+
+.botoes, .botoes-materia, #botaoEncerrar{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+    border-radius: 10px;
+    width: 80px;
+    border: none;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.botoes-materia{
+    background-color: none;
+    color:#686230;
+}
+
+.botoes:hover, .botoes-materia:hover, #botaoEncerrar:hover{
+    background-color: #686230;
+}
+
+.botoes-materia:hover{
+    color: white;
+}
+
+.resumos{
+    border: 1px solid rgb(200, 200, 200);
+    margin: 20px 100px 0px 100px;
+    padding: 20px;
+    display: flex;
+    width: 1000px;
+}
+
+.resumos img{
+    width: 300px;
+}
+
+.infoResumos{
+    padding-left: 10px;
+    border-left: 1px solid rgb(200, 200, 200);
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.excluir, .modificar, .salvarNovoResumo, .cancelarNovoResumo{
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.modificar, .salvarNovoResumo{
+    background-color: rgb(44, 171, 44);
+}
+
+.excluir, .cancelarNovoResumo{
+    background-color: rgb(196, 32, 32);
+}
+
+.excluir:hover, .modificar:hover, .cancelarNovoResumo:hover, .salvarNovoResumo:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.novoResumo{
+    background-color: #A3A184;
+    border: none;
+    color: white;
+    margin: 10px;
+    transition: background-color 0.2s ease;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 17px;
+}
+
+.novoResumo{
+    border-radius: 20px;
+}
+
+.salvar{
+    border-radius: 10px;
+    width: 80px;
+}
+
+.novoResumo:hover{
+    background-color: #686230;
+}
+
+.salvar{
+    background-color: #275347;
+    border: none;
+    color: white;
+    margin: 10px;
+    transition: background-color 0.2s ease;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 17px;
+
+}
+
+.salvar:hover{
+    background-color: #164034;
+}
+
+.inputEditar{
+    color: white;
+    background-color: #275347;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.inputEditar:hover, .salvar:hover{
+    transform: scale(1.1);
+}
+
+.inputEditar input, .inputEditar textarea{
+    border: none;
+    background-color: #275347;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    transition: background-color 0.2s ease;
+}
+
+.inputEditar textarea{
+    margin: 5px;
+}
+
+.inputEditar input:focus, .inputEditar textarea:focus{
+    color: white;
+    background-color: #275347;
+    padding: 5px;
+}
+
+::placeholder {
+    color: #164034;
+}
+
+.nome{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editarResumoBody{
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#editar{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#editar h2{
+    color: #164034;
+}
+
+#editar ::placeholder{
+    color: white;
+}

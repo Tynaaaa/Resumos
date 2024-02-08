@@ -1,0 +1,86 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #0A261E;
+    font-weight: bold;
+
+}
+
+button{
+    border: none;
+    color: #164034;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100px;
+    height: 20px;
+    color: #164034;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px 5px 5px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #164034;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 15px;
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.botoesLogin:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    color: #164034;
+}
+
+input, ::placeholder, label{
+    border: none;
+    margin: 5px 0px 0px 5px;
+    background-color: transparent;
+    color: #164034;
+    border-radius: 15px;
+    padding: 3px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 20px;
+}
+
+input:hover{
+    background-color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+
